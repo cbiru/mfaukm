@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- asas utk mobile app -->
+<meta charset="utf-8"> <!-- unicode -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- full srceen -->
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+
+
+<script src="js/jquery.min.js"></script>
+<!-- jquery mobile tema -->
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+
+<body >
+<!-- this is first page -->
+<div data-role="page" id="p1">
+	<div data-role="header" data-position="fixed" data-theme="b">
+	  <h3>Peta Minda</h3>
+	</div>
+	<div role="main" class="ui-content" data-theme="d">
+	
+	<!-- This is grid setting -->
+	 <div class="ui-grid-a ui-responsive">
+	  <!-- This is 1st row -->
+	    <div class="ui-block-a">
+	     <img src="gambar/koala.jpg" height="200" width="250" />
+	    </div>
+		
+	
+	  <div class="ui-block-b">
+	  
+	   <h3>Celik Minda</h3>
+	    <p>
+	     Jelaskan apa yg dikatakan dengan gambar di sebelah?
+		</p>
+	   </div>
+	   	
+		<!-- This is 2nd row -->
+	    
+        <div class="ui-block-a">
+	     <h3>Celik Minda</h3>
+	     <p>
+	       Jelaskan apa yg dikatakan dengan gambar di sebelah?   
+		 </p>
+		
+	    </div>
+		
+	
+	  <div class="ui-block-b">
+	  <img src="gambar/flower1.jpg" height="200" width="250" />
+	  
+		
+	   </div>		
+		 
+		 
+		 
+		 
+	 </div>
+	
+	</div>
+	<div data-role="footer" data-position="fixed"data-theme="a">
+	 <div data-role="navbar">
+            <ul>
+                <li><a  data-icon="grid" class="ui-btn-active ui-state-persist">Utama</a></li>
+                <li><a  href="#p2" data-icon="star" data-transition="pop"  >Isi</a></li>
+                <li><a  href="#p3" data-icon="gear" data-transition="slide"  >Hubungi</a></li>
+            </ul>
+        </div>
+	</div>
+
+</div>
+
+<!-- this is second page -->
+<div data-role="page" id="p2">
+    <div  data-role="panel" data-display="reveal" id="panel1" data-position="right">
+		<h3>Kandungan</h3>
+		<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+			<h4>Pantulan Cahaya</h4>
+				<ul data-role="listview" data-inset="false">
+					<li><a href="bab1.html" data-transition="pop">Pengenalan</a></li>
+					<li>Peraturan</li>
+					<li>Kedudukan</li>
+				</ul>
+		</div>
+
+	
+    </div>
+
+	<div data-role="header" data-position="fixed" >
+		<a href="#panel1" data-icon="bars"data-iconpos="notext">Panel</a>
+	  <h3> Cahaya</h3>
+	 
+	</div>
+	<div role="main" class="ui-content">
+	 <h3>Sifat Cahaya</h3>
+	  <ul data-role="listview" data-inset="true">
+	    <li>Cahaya bergerak lurus</li>
+		<li>Cahaya boleh dipantulkan, dibiaskan dan diserap ke dalam udara.. </li>
+	  </ul>
+	 <!-- to insert button to link other page.. -->
+	 <a href="#p3" class="ui-btn" data-transition="slide">Ke page 3</a>
+	 
+	  
+	</div>
+	<div data-role="footer" data-position="fixed">
+	 <div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid" data-transition="turn" data-direction="reverse">Utama</a></li>
+                <li><a  data-icon="star" class="ui-btn-active ui-state-persist">Isi</a></li>
+                <li><a  href="#p3" data-icon="gear"data-transition="slide" data-direction="reverse" >Hubungi</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+<!-- this is third page -->
+<div data-role="page" id="p3">
+	<div data-role="header" data-position="fixed">
+	  <h3> Cahaya</h3>
+	 
+	</div>
+	<div role="main" class="ui-content">
+	 <h3>Sifat Cahaya</h3>
+	  <ul data-role="listview" data-inset="true">
+	    <li>Cahaya bergerak lurus</li>
+		<li>Cahaya boleh dipantulkan, dibiaskan dan diserap ke dalam udara.. </li>
+	  </ul>
+		
+	 
+	 
+	  
+	</div>
+	<div data-role="footer" data-position="fixed">
+		
+	    <div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid" data-transition="turn" data-direction="reverse">Utama</a></li>
+                <li><a href="#p2" data-icon="star" data-transition="fade" data-direction="reverse">Isi</a></li>
+                <li><a  data-icon="gear" class="ui-btn-active ui-state-persist">Hubungi</a></li>
+            </ul>
+        </div>
+
+	</div>
+</div>
+
+</body>
+</html>
+
